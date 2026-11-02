@@ -109,8 +109,6 @@ Este repositório contém uma adaptação para demonstração e portfólio do pr
 
 A versão demonstrativa não representa a aplicação full stack em produção e não reivindica autoria individual sobre o trabalho coletivo. Consulte `CREDITOS.md` para informações adicionais sobre créditos e autorização de publicação.
 
-## Licença e autorização
+## Licença
 
-O pacote de origem utilizado nesta adaptação não continha um arquivo `LICENSE`. Embora tenha existido uma indicação de licença no `package.json` original, isso, isoladamente, não comprova que todos os materiais e contribuições estejam autorizados para redistribuição independente.
-
-Antes de tornar este repositório público, confirme a autorização com os demais participantes e/ou com a organização do hackathon e registre a licença acordada. Nenhuma licença foi presumida ou adicionada nesta cópia.
+Esse projeto é licenciado pelo [MIT Licence](https://opensource.org/license/MIT)
