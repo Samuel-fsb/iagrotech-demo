@@ -6,7 +6,7 @@ import { DEMO_MODE } from '../config/demo';
 import { exportDemoData, getDemoUser, resetDemoState, saveDemoProfile } from '../services/demo/demo.store';
 import { authService } from '../services/auth.service';
 
-interface AuthContextData {
+export interface AuthContextData {
   user: User | null;
   isAuthenticated: boolean;
   isLoading: boolean;
