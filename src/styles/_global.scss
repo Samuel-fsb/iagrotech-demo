@@ -1,0 +1,60 @@
+// ============================================
+// Estilos Globais
+// ============================================
+
+@use 'mixins' as *;
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: var(--line-height-normal);
+}
+
+// === Headings ===
+h1 {
+  font-size: var(--font-size-3xl);
+  line-height: var(--line-height-tight);
+}
+
+h2 {
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-tight);
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-tight);
+}
+
+h4 {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-tight);
+}
+
+// === Links ===
+a {
+  color: var(--color-primary);
+  transition: color var(--transition-fast);
+
+  &:hover {
+    color: var(--color-primary-dark);
+  }
+}
+
+// === Focus Visible ===
+:focus-visible {
+  @include focus-ring;
+}
+
+// === Selection ===
+::selection {
+  background-color: var(--color-primary-bg);
+  color: var(--color-primary-dark);
+}
+
+// === Scrollbar Global ===
+body {
+  @include custom-scrollbar;
+}

@@ -1,0 +1,172 @@
+*{
+    font-family: noto-sans, sans-serif;
+}
+
+
+.cadastro-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+  background:#457126 ;
+  
+
+  h1 {
+    color: black;
+    margin: 0 0 8px;
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 16px;
+    font-weight: bold;
+    color: #4a5e4a;
+  }
+
+  input {
+    width: 100%;
+    margin-top: 8px;
+    padding: 13px;
+    border: 1px solid #ccd6cf;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+
+    &:focus {
+      outline: 2px solid #4caf72;
+      border-color: transparent;
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 14px;
+    border: 0;
+    border-radius: 8px;
+    background: #2e7d32;
+    color: #EEF1E8;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      background: #1A4419;
+    }
+  }
+
+  a {
+    color: #CDE1A0;
+  }
+}
+
+.cadastro-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 36px;
+  background:#EEF1E8;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(18, 45, 16, 0.24);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  color: #2e7d32;
+}
+
+.logoImage {
+  display: block;
+  width: min(100%, 220px);
+  height: auto;
+}
+
+.logoIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #CDE1A0;
+  color: #2e7d32;
+}
+
+.logo h2 {
+  margin: 0;
+  color: #1A4419;
+  font-size: 24px;
+}
+
+.subtitle {
+  margin: 0 0 28px;
+  text-align: center;
+  color: #68756d;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.forgot-password,
+.login-link a {
+  color: #299653;
+  text-decoration: none;
+}
+
+.forgot-password {
+  display: block;
+  margin: 4px 0 22px;
+  text-align: right;
+  font-size: 14px;
+}
+
+.error-message {
+  display: block;
+  margin-bottom: 12px;
+  color: #c62828;
+  font-size: 14px;
+}
+
+.login-link {
+  margin: 22px 0 0;
+  text-align: center;
+  color: #68756d;
+  font-size: 14px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input {
+  padding-left: 42px;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  transform: translateY(-50%);
+  color: #299653;
+  pointer-events: none;
+}
+
+@media (max-width: 520px) {
+  .cadastro-card {
+    padding: 24px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

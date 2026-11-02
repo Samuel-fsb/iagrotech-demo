@@ -1,0 +1,222 @@
+.registerContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xl);
+  background: var(--color-background);
+}
+
+.registerShell {
+  display: grid;
+  width: min(1040px, 100%);
+  grid-template-columns: minmax(280px, 0.9fr) minmax(340px, 1.25fr);
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-lg);
+
+  @media (max-width: 860px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-lg);
+  padding: var(--space-2xl);
+  background: var(--color-primary-dark);
+  color: var(--color-text-inverse);
+
+  h2 {
+    margin: 0;
+    font-size: var(--font-size-3xl);
+  }
+
+  p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.78);
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+
+}
+
+.logoImage {
+  width: 190px;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    color: rgba(255, 255, 255, 0.86);
+    font-size: var(--font-size-sm);
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+    color: var(--color-primary-lighter);
+  }
+}
+
+.formCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  padding: var(--space-2xl);
+}
+
+.formGrid,
+.paymentPanel {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-md);
+
+  @media (max-width: 620px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+
+  label {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+  }
+
+  input,
+  select {
+    width: 100%;
+    border: 1px solid #dce5dc;
+    border-radius: var(--radius-md);
+    padding: var(--space-sm) var(--space-md);
+    color: var(--color-text);
+    font: inherit;
+    background: var(--color-surface);
+  }
+}
+
+.planSection {
+  padding: 0;
+  border: 0;
+
+  legend {
+    margin-bottom: var(--space-sm);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+  }
+}
+
+.planGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-md);
+
+  @media (max-width: 620px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.planCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  min-height: 150px;
+  border: 1px solid #dce5dc;
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  background: var(--color-surface);
+  color: var(--color-text);
+  cursor: pointer;
+  text-align: left;
+  transition: all var(--transition-fast);
+
+  strong {
+    font-size: var(--font-size-lg);
+  }
+
+  span {
+    color: var(--color-primary);
+    font-weight: var(--font-weight-bold);
+  }
+
+  small {
+    color: var(--color-text-muted);
+    line-height: var(--line-height-normal);
+  }
+}
+
+.planCardActive {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-bg);
+}
+
+.paymentPanel {
+  border: 1px solid #dce5dc;
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  background: var(--color-background);
+}
+
+.error {
+  border-radius: var(--radius-md);
+  padding: var(--space-sm);
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+  font-size: var(--font-size-sm);
+  text-align: center;
+}
+
+.consentBox {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: var(--space-sm);
+  align-items: flex-start;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+
+  input {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    accent-color: var(--color-primary);
+  }
+
+  a {
+    color: var(--color-primary);
+    font-weight: var(--font-weight-semibold);
+    text-decoration: none;
+  }
+}
+
+.authLink {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  text-align: center;
+
+  a {
+    color: var(--color-primary);
+    font-weight: var(--font-weight-semibold);
+    text-decoration: none;
+  }
+}

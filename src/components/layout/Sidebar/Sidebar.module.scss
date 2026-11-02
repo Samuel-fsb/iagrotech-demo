@@ -1,0 +1,211 @@
+@use '../../../styles/mixins' as *;
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--sidebar-width);
+  height: 100vh;
+  background: linear-gradient(180deg, #1B5E20 0%, #2E7D32 50%, #1B5E20 100%);
+  display: flex;
+  flex-direction: column;
+  z-index: var(--z-sticky);
+  transition: transform var(--transition-base);
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  @include custom-scrollbar;
+
+  // Mobile: hidden by default
+  @media (max-width: 1023px) {
+    transform: translateX(-100%);
+
+    &--open {
+      transform: translateX(0);
+    }
+  }
+
+  // === Logo ===
+  &__logo {
+    display: flex;
+    align-items: center;
+    padding: var(--space-lg) var(--space-lg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: var(--space-sm);
+
+    &-image {
+      width: 100%;
+    }
+  }
+
+  // === Navigation ===
+  &__nav {
+    flex: 1;
+    padding: var(--space-xs) var(--space-sm);
+  }
+
+  &__section {
+    margin-bottom: var(--space-sm);
+
+    &-label {
+      font-size: 10px;
+      font-weight: var(--font-weight-semibold);
+      color: rgba(255, 255, 255, 0.4);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: var(--space-xs) var(--space-sm);
+      margin-bottom: 2px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-md);
+    color: rgba(255, 255, 255, 0.75);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    text-decoration: none;
+    margin-bottom: 2px;
+    min-height: 40px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #FFFFFF;
+    }
+
+    &--active {
+      background-color: rgba(255, 255, 255, 0.18);
+      color: #FFFFFF;
+      font-weight: var(--font-weight-semibold);
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.22);
+      }
+    }
+
+    // Badge count
+    &-badge {
+      margin-left: auto;
+      background-color: #FF5252;
+      color: #FFFFFF;
+      font-size: 10px;
+      font-weight: var(--font-weight-bold);
+      padding: 1px 7px;
+      border-radius: var(--radius-full);
+      min-width: 20px;
+      text-align: center;
+    }
+  }
+
+  // === User Profile ===
+  &__user {
+    padding: var(--space-md) var(--space-lg);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+
+    &-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-full);
+      background-color: rgba(255, 255, 255, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-weight: var(--font-weight-bold);
+      font-size: var(--font-size-sm);
+      flex-shrink: 0;
+    }
+
+    &-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    &-name {
+      font-size: var(--font-size-sm);
+      font-weight: var(--font-weight-semibold);
+      color: #FFFFFF;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &-plan {
+      font-size: 10px;
+      padding: 1px 8px;
+      border-radius: var(--radius-full);
+      font-weight: var(--font-weight-semibold);
+      display: inline-block;
+      margin-top: 2px;
+
+      &--free {
+        background-color: rgba(255, 255, 255, 0.15);
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      &--premium {
+        background: linear-gradient(135deg, #FFD54F, #FFB300);
+        color: #4E342E;
+      }
+    }
+  }
+
+  &__logout {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.78);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.16);
+      color: #FFFFFF;
+    }
+  }
+}
+
+// === Overlay for mobile ===
+.overlay {
+  display: none;
+
+  @media (max-width: 1023px) {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: calc(var(--z-sticky) - 1);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--transition-base);
+
+    &--visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}

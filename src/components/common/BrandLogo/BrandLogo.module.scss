@@ -1,0 +1,18 @@
+.logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.logo--default {
+  max-width: 235px;
+}
+
+.logo--surface {
+  max-width: 190px;
+}
+
+.logo--compact {
+  max-width: 150px;
+}

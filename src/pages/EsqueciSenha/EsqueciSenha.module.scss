@@ -1,0 +1,24 @@
+.recuper-container {
+  min-height: 100vh;
+}
+
+.recuperCard {
+  max-width: 440px;
+  box-shadow: 0 12px 32px rgba(18, 45, 16, 0.24);
+}
+
+.submitButton {
+  background: #2e7d32;
+  color: #EEF1E8;
+
+  &:hover {
+    background: #1A4419;
+  }
+}
+
+.success-message {
+  margin: 12px 0;
+  color: #003518;
+  font-size: 14px;
+  text-align: center;
+}

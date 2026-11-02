@@ -1,0 +1,116 @@
+.statCard {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+  }
+
+  &:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-sm);
+  }
+
+  &__label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    font-weight: var(--font-weight-medium);
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__value {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text);
+    line-height: var(--line-height-tight);
+    margin-bottom: var(--space-2xs);
+  }
+
+  &__change {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+
+    &--positive {
+      color: var(--color-success);
+    }
+
+    &--negative {
+      color: var(--color-danger);
+    }
+  }
+
+  // === Color Variants ===
+  &--green {
+    &::before { background-color: var(--color-primary); }
+    .statCard__icon {
+      background-color: var(--color-primary-bg);
+      color: var(--color-primary);
+    }
+  }
+
+  &--blue {
+    &::before { background-color: var(--color-info); }
+    .statCard__icon {
+      background-color: var(--color-info-bg);
+      color: var(--color-info);
+    }
+  }
+
+  &--orange {
+    &::before { background-color: var(--color-warning); }
+    .statCard__icon {
+      background-color: var(--color-warning-bg);
+      color: #e65100;
+    }
+  }
+
+  &--red {
+    &::before { background-color: var(--color-danger); }
+    .statCard__icon {
+      background-color: var(--color-danger-bg);
+      color: var(--color-danger);
+    }
+  }
+
+  &--purple {
+    &::before { background-color: #7B1FA2; }
+    .statCard__icon {
+      background-color: #F3E5F5;
+      color: #7B1FA2;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@use '../../../styles/mixins' as *;
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+
+  &__content {
+    flex: 1;
+    margin-left: var(--sidebar-width);
+    margin-top: var(--header-height);
+    padding: var(--space-lg);
+    max-width: 100%;
+    transition: margin-left var(--transition-base);
+
+    @media (max-width: 1023px) {
+      margin-left: 0;
+    }
+
+    @include desktop-wide {
+      padding: var(--space-xl);
+    }
+  }
+}

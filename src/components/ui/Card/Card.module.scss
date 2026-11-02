@@ -1,0 +1,43 @@
+.card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: box-shadow var(--transition-base);
+
+  &:hover {
+    box-shadow: var(--shadow-md);
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-md) var(--space-lg);
+    border-bottom: 1px solid #f0f0f0;
+
+    h3 {
+      font-size: var(--font-size-md);
+      font-weight: var(--font-weight-semibold);
+      color: var(--color-text);
+      margin: 0;
+    }
+  }
+
+  &__body {
+    padding: var(--space-lg);
+  }
+
+  &__footer {
+    padding: var(--space-sm) var(--space-lg);
+    border-top: 1px solid #f0f0f0;
+    background-color: var(--color-background);
+  }
+
+  // === No padding variant ===
+  &--flush {
+    .card__body {
+      padding: 0;
+    }
+  }
+}
