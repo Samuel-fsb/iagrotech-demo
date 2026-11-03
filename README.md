@@ -96,12 +96,7 @@ O IAgroTech foi desenvolvido colaborativamente durante um hackathon. A equipe de
 | **Lucas** | Desenvolvimento do backend e integração com o frontend por meio das APIs, em parceria com Matheus. |
 | **Matheus** | Desenvolvimento do backend e integração com o frontend por meio das APIs, em parceria com Lucas. |
 | **Jéssica** | Criação do design da aplicação e definição da experiência visual das interfaces. |
-| **Eleudson Queiroz** | Acompanhamento e orientação da equipe durante o desenvolvimento. Nome: a confirmar. |
-
-O planejamento da arquitetura foi realizado em colaboração com a equipe. As responsabilidades acima destacam as principais frentes de atuação, sem desconsiderar a colaboração entre os integrantes.
-
-> Antes de publicar, complete o nome do hackathon e o nome do orientador, e confirme com os participantes se a descrição das contribuições está correta.
-> 
+| **Eleudson Queiroz** | Acompanhamento e orientação da equipe durante o desenvolvimento. |
 
 ## Contexto desta cópia
 
