@@ -6,7 +6,7 @@ O IAgroTech é uma plataforma pensada para apoiar pequenos agricultores e produt
 
 O projeto nasceu durante um hackathon, em uma equipe multidisciplinar de cinco participantes, com acompanhamento de um orientador. Esta cópia apresenta uma versão demonstrativa independente, preparada para portfólio: qualquer visitante pode explorar a aplicação sem criar uma conta ou depender de um backend hospedado.
 
-> **Atenção — ambiente demonstrativo:** os dados são fictícios. Cadastros, edições e exclusões são simulados e ficam salvos somente no armazenamento local (`localStorage`) do navegador utilizado. Esta versão não possui autenticação real, banco de dados conectado, sincronização entre visitantes, pagamentos ou integração com um modelo de inteligência artificial. Não insira informações pessoais ou dados reais de uma propriedade.
+> **Atenção — ambiente demonstrativo:** os dados são fictícios. Cadastros, edições e exclusões são simulados e ficam salvos somente no armazenamento local (`localStorage`) do navegador utilizado. Esta versão não possui autenticação real, banco de dados conectado, sincronização entre visitantes, pagamentos ou integração com um modelo de inteligência artificial.
 > 
 
 ## Demonstração
@@ -46,7 +46,7 @@ As alterações feitas nos módulos são refletidas nos dados compartilhados da 
 
 ### Arquitetura da versão original
 
-A proposta full stack do hackathon também contempla backend em Node.js/Express e banco de dados PostgreSQL. Esses componentes e os scripts SQL originais foram preservados neste repositório como referência do trabalho inicial, mas **não são iniciados nem necessários para executar ou publicar esta demonstração**.
+A proposta full stack do hackathon também contempla backend em Node.js/Express e banco de dados PostgreSQL. Esses componentes e os scripts SQL originais foram preservados neste repositório como referência do trabalho inicial, mas não são iniciados nem necessários para executar ou publicar esta demonstração.
 
 ## Como executar localmente
 
@@ -54,6 +54,18 @@ A proposta full stack do hackathon também contempla backend em Node.js/Express 
 
 - Node.js 20.19+ ou 22.12+;
 - npm.
+
+Siga os passos abaixo para testar o projeto no seu computador:
+
+1. Clone este repositório:
+```bash
+git clone https://github.com/Samuel-fsb/iagrotech-demo.git
+```
+
+2. Abra a pasta do projeto no seu terminal ou explorador de arquivos:
+```bash
+   cd iagrotech-demo
+```
 
 Na raiz do projeto, execute:
 
