@@ -114,7 +114,7 @@ O IAgroTech foi desenvolvido colaborativamente durante um hackathon. A equipe de
 
 Este repositório contém uma adaptação para demonstração e portfólio do projeto coletivo desenvolvido no hackathon. O objetivo é permitir que recrutadores e outras pessoas conheçam a proposta e naveguem pelos principais fluxos do frontend sem exigir infraestrutura ativa.
 
-A versão demonstrativa não representa a aplicação full stack em produção e não reivindica autoria individual sobre o trabalho coletivo. Consulte `CREDITOS.md` para informações adicionais sobre créditos e autorização de publicação.
+A versão demonstrativa não representa a aplicação full stack em produção e não reivindica autoria individual sobre o trabalho coletivo.
 
 ## Licença
 
