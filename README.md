@@ -6,7 +6,7 @@ O IAgroTech é uma plataforma pensada para apoiar pequenos agricultores e produt
 
 O projeto nasceu durante um hackathon, em uma equipe multidisciplinar de cinco participantes, com acompanhamento de um orientador. Esta cópia apresenta uma versão demonstrativa independente, preparada para portfólio: qualquer visitante pode explorar a aplicação sem criar uma conta ou depender de um backend hospedado.
 
-> **Atenção — ambiente demonstrativo:** os dados são fictícios. Cadastros, edições e exclusões são simulados e ficam salvos somente no armazenamento local (`localStorage`) do navegador utilizado. Esta versão não possui autenticação real, banco de dados conectado, sincronização entre visitantes, pagamentos ou integração com um modelo de inteligência artificial. Não insira informações pessoais ou dados reais de uma propriedade.
+> **Atenção — ambiente demonstrativo:** os dados são fictícios. Cadastros, edições e exclusões são simulados e ficam salvos somente no armazenamento local (`localStorage`) do navegador utilizado. Esta versão não possui autenticação real, banco de dados conectado, sincronização entre visitantes, pagamentos ou integração com um modelo de inteligência artificial.
 > 
 
 ## Demonstração
@@ -46,7 +46,7 @@ As alterações feitas nos módulos são refletidas nos dados compartilhados da 
 
 ### Arquitetura da versão original
 
-A proposta full stack do hackathon também contempla backend em Node.js/Express e banco de dados PostgreSQL. Esses componentes e os scripts SQL originais foram preservados neste repositório como referência do trabalho inicial, mas **não são iniciados nem necessários para executar ou publicar esta demonstração**.
+A proposta full stack do hackathon também contempla backend em Node.js/Express e banco de dados PostgreSQL. Esses componentes e os scripts SQL originais foram preservados neste repositório como referência do trabalho inicial, mas não são iniciados nem necessários para executar ou publicar esta demonstração.
 
 ## Como executar localmente
 
@@ -54,6 +54,18 @@ A proposta full stack do hackathon também contempla backend em Node.js/Express 
 
 - Node.js 20.19+ ou 22.12+;
 - npm.
+
+Siga os passos abaixo para testar o projeto no seu computador:
+
+1. Clone este repositório:
+```bash
+git clone https://github.com/Samuel-fsb/iagrotech-demo.git
+```
+
+2. Abra a pasta do projeto no seu terminal ou explorador de arquivos:
+```bash
+   cd iagrotech-demo
+```
 
 Na raiz do projeto, execute:
 
@@ -96,18 +108,13 @@ O IAgroTech foi desenvolvido colaborativamente durante um hackathon. A equipe de
 | **Lucas** | Desenvolvimento do backend e integração com o frontend por meio das APIs, em parceria com Matheus. |
 | **Matheus** | Desenvolvimento do backend e integração com o frontend por meio das APIs, em parceria com Lucas. |
 | **Jéssica** | Criação do design da aplicação e definição da experiência visual das interfaces. |
-| **Eleudson Queiroz** | Acompanhamento e orientação da equipe durante o desenvolvimento. Nome: a confirmar. |
-
-O planejamento da arquitetura foi realizado em colaboração com a equipe. As responsabilidades acima destacam as principais frentes de atuação, sem desconsiderar a colaboração entre os integrantes.
-
-> Antes de publicar, complete o nome do hackathon e o nome do orientador, e confirme com os participantes se a descrição das contribuições está correta.
-> 
+| **Eleudson Queiroz** | Acompanhamento e orientação da equipe durante o desenvolvimento. |
 
 ## Contexto desta cópia
 
 Este repositório contém uma adaptação para demonstração e portfólio do projeto coletivo desenvolvido no hackathon. O objetivo é permitir que recrutadores e outras pessoas conheçam a proposta e naveguem pelos principais fluxos do frontend sem exigir infraestrutura ativa.
 
-A versão demonstrativa não representa a aplicação full stack em produção e não reivindica autoria individual sobre o trabalho coletivo. Consulte `CREDITOS.md` para informações adicionais sobre créditos e autorização de publicação.
+A versão demonstrativa não representa a aplicação full stack em produção e não reivindica autoria individual sobre o trabalho coletivo.
 
 ## Licença
 
