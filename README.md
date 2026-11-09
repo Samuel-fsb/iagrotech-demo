@@ -6,6 +6,8 @@ O IAgroTech é uma plataforma pensada para apoiar pequenos agricultores e produt
 
 O projeto nasceu durante um hackathon, em uma equipe multidisciplinar de cinco participantes, com acompanhamento de um orientador. Esta cópia apresenta uma versão demonstrativa independente, preparada para portfólio: qualquer visitante pode explorar a aplicação sem criar uma conta ou depender de um backend hospedado.
 
+<img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/618d36bc-d250-4da7-9adb-128728111945" />
+
 > **Atenção — ambiente demonstrativo:** os dados são fictícios. Cadastros, edições e exclusões são simulados e ficam salvos somente no armazenamento local (`localStorage`) do navegador utilizado. Esta versão não possui autenticação real, banco de dados conectado, sincronização entre visitantes, pagamentos ou integração com um modelo de inteligência artificial.
 > 
 
